@@ -1,0 +1,43 @@
+Create the following files and directories. Do what’s necessary so that when you
+use the ls -l command in your directory, the output will looks like this :
+
+ 1. mkdir test0 test2
+
+ 2. chmod 715 test0
+ 3. chmod 504 test2
+
+ 4. touch -a -m -t 202206012047.00 test0
+ 5. touch -a -m -t 202206012245.00 test2
+
+ 6. touch test1 test3 test4
+
+ 7. echo "AAA" > test1
+ 8. echo "" > test3
+ 9. echo "A" > test4
+
+10. chmod 714 test1
+11. chmod 404 test3
+12. chmod 641 test4
+
+13. touch -a -m -t 202206012146.00 test1
+14. touch -a -m -t 202206012344.00 test3
+15. touch -a -m -t 202206012343.00 test4
+
+16. ln test3 test5
+17. ln -s test0 test6
+18. chmod -h 777 test6
+19. touch -h -a -m -t 202206012220.00 test6
+
+20. tar -cf exo2.tar *
+
+21. rm -fm test1 test3 test4 test5 test6
+22. rm -fm test0 test2
+
+**Test**
+
+tar -xvpf exo2.tar
+ls -l
+check permission
+check count link
+chech bit
+check time modify

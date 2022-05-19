@@ -1,0 +1,21 @@
+- Add your public key to your repository, in a file name id_rsa_pub
+
+1. copy text in .ssh/id_rsa.pub
+
+2. cd shell00/ex03
+
+3. touch id_rsa_pub
+
+4. echo "{paste}" > id_rsa_pub
+
+- Update your ssh key on the intranet. This will allow you to push the repository
+to our git server.
+
+5. git add id_rsa_pub
+6. git commit -m "Update id_rsa_pub"
+7. git push
+
+**Test**
+
+cd shell00/ex03
+cat id_rsa_pub

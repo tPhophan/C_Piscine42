@@ -1,0 +1,39 @@
+voidft_putchar(char c);
+
+voidft_print(int len, char first_char, char middle_char, char last_char)
+{
+	int	letter_count;
+2
+	letter_count = 1;
+	while (letter_count <= len)
+	{
+		if (letter_count == 1)
+			ft_putchar(first_char);
+		else if (letter_count == len)
+			ft_putchar(last_char);
+		else
+			ft_putchar(middle_char);
+		letter_count++;
+	}
+	ft_putchar('\n');
+}
+
+voidrush(int x, int y)
+{
+	int	line_count;
+
+	line_count = 1;
+	if (x >= 1 && y >= 1)
+	{
+		while (line_count <= y)
+		{
+		if (line_count == 1)
+			ft_print(x, 'A', 'B', 'C');
+		else if (line_count == y)
+			ft_print(x, 'A', 'B', 'C');
+		else
+			ft_print(x, 'B', ' ', 'B');
+		line_count++;
+		}
+	}
+}

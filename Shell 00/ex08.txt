@@ -1,0 +1,22 @@
+~In a file called clean place the command line that will 
+- search for all files in the current directory as well as in its sub-directories
+
+1. find .
+
+- with a name ending by ~, or a name that start and end by #
+
+2. -type f -name "*~" -o -type f -name "#**#"
+
+-  The command line will show and erase all files found. (-print -delete)
+
+3. -print -delete
+
+- Only one command is allowed: no ’;’ or ’&&’ or other shenanigans. 
+
+
+
+**Test**
+
+touch a~ b# #c #d#
+
+bash clean

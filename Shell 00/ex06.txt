@@ -1,0 +1,20 @@
+In this exercice, you will write a short shell script that lists all the existing files
+ignored by your GiT repository. Example:
+
+1. touch git_ignore.sh
+2. echo "git ls-file --other -i --exclude-standard" > git_ignore.sh
+3. cd 
+4. cd shell00/.git/info
+5. vim exclude
+6. insert (.DS_Store
+	  mywork.c)
+7. cd
+8. cd shell00/ex06
+
+**Test**
+
+touch .DS_Store mywork.c
+
+ls -la
+
+bash git_ignore.sh | cat -e

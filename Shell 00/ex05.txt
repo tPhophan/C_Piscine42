@@ -1,0 +1,8 @@
+Create a shell script that displays the ids of the last 5 commits of your git repository.
+
+1. touch git_commit.sh
+2. exho '''git log -n 5 (last 5 ID) --format="%H" (Show only ID in Header)''' > git_commit.sh
+
+**Test**
+
+bash git_commit.sh | cat -e

@@ -1,0 +1,13 @@
+Create a file b, so that :
+
+2. copy file tar to ex07
+3. tar -xvpf resources.tar.gz
+4. ln a b
+5. patch -i sw.diff
+6. b
+
+**Test**
+
+cat -e a
+diff a b
+cat sw.diff

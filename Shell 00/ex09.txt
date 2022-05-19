@@ -1,0 +1,5 @@
+Create a magic file called ft_magic that will be formatted appropriately to detect
+files of 42 file type, built with a "42" string at the 42nd byte.
+
+1. touch tf_magic
+2. echo "42 string 42 42 file" > tf_magic

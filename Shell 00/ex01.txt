@@ -1,0 +1,22 @@
+Create a file called testShell00 in your submission directory.
+
+• Figure out a way for the output to look like this (except for the “total 1” line):
+
+touch testShell00
+chmod 455 (r-- = 4, r-x = 4+1, r-x = 4+1)
+touch -a -m -t 202206012342.00
+echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" > testShell00
+
+• Once you’ve achieved the previous steps, execute the following command to create
+the file to be submitted: tar -cf testShell00.tar testShell00
+
+tar -cf testShell00.tar testShell00
+
+**Test**
+
+tar -xvpf testShell00.tar
+ls -l
+check permission
+check count link
+chech bit
+check time modify  "stat -x testshell00"
